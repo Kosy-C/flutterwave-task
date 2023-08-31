@@ -1,0 +1,24 @@
+{
+  "name": "bank_acc_node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon dist/app.js",
+    "compile": "tsc -w"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "joi": "^17.10.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/joi": "^17.2.3",
+    "@types/morgan": "^1.9.5",
+    "@types/uuid": "^9.0.3",
+    "typescript": "^5.2.2"
+  }
+}
