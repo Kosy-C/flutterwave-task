@@ -11,7 +11,7 @@ const path_1 = __importDefault(require("path"));
 let bankDetails = [];
 const dataFile = path_1.default.join(__dirname, '../config/db.json');
 // read the data from the data.json file and parse it as JSON
-async function loadAccounts() {
+async function ReadBankAccounts() {
     try {
         const data = fs_1.default.readFileSync(dataFile, 'utf-8');
         bankDetails = JSON.parse(data);
@@ -21,7 +21,7 @@ async function loadAccounts() {
     }
 }
 ;
-loadAccounts();
+ReadBankAccounts();
 const createBankAcc = async (req, res, next) => {
     try {
         const { accountHolderName, accountHolderDOB, accountType, initialBalance } = req.body;
@@ -56,7 +56,7 @@ const createBankAcc = async (req, res, next) => {
             fs_1.default.writeFileSync(dataFile, JSON.stringify(bankDetails, null, 2));
             return res.status(201).json({
                 accountNumber,
-                message: `Account created for ${accountHolderName} with account type: ${accountType} and initial balance: ${initialBalance}.`
+                message: `Account has been created for ${accountHolderName} with account type: ${accountType} and initial balance: ${initialBalance}.`
             });
         }
     }

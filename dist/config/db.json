@@ -102,5 +102,21 @@
     "accountType": "Checkings",
     "initialBalance": 107,
     "accountNumber": 1450786297
+  },
+  {
+    "id": "d72886d4-aada-4e0e-b388-8d8ec017e6c3",
+    "accountHolderName": "Mann",
+    "accountHolderDOB": "30-01-2000",
+    "accountType": "Checkings",
+    "initialBalance": 107,
+    "accountNumber": 1188437334
+  },
+  {
+    "id": "4a7b2548-9187-44a9-89d3-45249ef771ad",
+    "accountHolderName": "Koko Billion",
+    "accountHolderDOB": "08-31-2000",
+    "accountType": "Savings",
+    "initialBalance": 10000,
+    "accountNumber": 1121660284
   }
 ]
